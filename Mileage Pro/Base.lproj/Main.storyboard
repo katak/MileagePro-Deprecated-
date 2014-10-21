@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0c9-D5-rfr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mileage Data-->
+        <scene sceneID="tPe-5o-8nE">
+            <objects>
+                <tableViewController id="QyC-jz-tQS" customClass="MileageDataTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kE8-DL-hWv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Mileage Data Point" textLabel="KN2-zd-1P5" detailTextLabel="RZj-PH-Q0I" style="IBUITableViewCellStyleSubtitle" id="9JA-N5-Lbd">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9JA-N5-Lbd" id="sBf-3j-F0D">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KN2-zd-1P5">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RZj-PH-Q0I">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Efc-gy-5Pl" kind="push" identifier="Display Info" id="G10-DA-2Wg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QyC-jz-tQS" id="sCG-cy-Cue"/>
+                            <outlet property="delegate" destination="QyC-jz-tQS" id="afs-Ep-rua"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mileage Data" id="14q-bS-aHD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UUU-8x-5Aq">
+                            <connections>
+                                <segue destination="4PM-Pl-atb" kind="push" identifier="Add Data Point" id="ExT-Jv-abh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swv-6S-5oF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="171"/>
+        </scene>
+        <!--Mileage Data View Controller-->
+        <scene sceneID="ZiY-cE-J9D">
+            <objects>
+                <viewController id="4PM-Pl-atb" customClass="MileageDataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bK3-c2-URA"/>
+                        <viewControllerLayoutGuide type="bottom" id="8eS-vr-Vu6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvD-j6-0QU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallons purchased:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHb-YY-xUa">
+                                <rect key="frame" x="16" y="73" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odometer reading:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-V4-gT5">
+                                <rect key="frame" x="21" y="111" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total cost:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-SF-y39">
+                                <rect key="frame" x="86" y="149" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pkk-SS-l37">
+                                <rect key="frame" x="173" y="69" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-DA-Idd">
+                                <rect key="frame" x="173" y="107" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qEv-13-Lk2">
+                                <rect key="frame" x="173" y="145" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="trailing" secondItem="qEv-13-Lk2" secondAttribute="trailing" id="2n2-NN-XAc"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="leading" secondItem="qEv-13-Lk2" secondAttribute="leading" id="54L-0p-yPB"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="leading" secondItem="ibN-DA-Idd" secondAttribute="leading" id="8Oo-D1-5TZ"/>
+                            <constraint firstItem="Q4U-V4-gT5" firstAttribute="top" secondItem="gHb-YY-xUa" secondAttribute="bottom" constant="17" id="ATC-3K-Hb5"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="top" secondItem="bK3-c2-URA" secondAttribute="bottom" constant="5" id="DEd-Ah-in7"/>
+                            <constraint firstItem="gHb-YY-xUa" firstAttribute="leading" secondItem="zvD-j6-0QU" secondAttribute="leadingMargin" id="Hhs-nY-37s"/>
+                            <constraint firstItem="fUx-SF-y39" firstAttribute="trailing" secondItem="gHb-YY-xUa" secondAttribute="trailing" id="Kd2-FT-IYJ"/>
+                            <constraint firstItem="fUx-SF-y39" firstAttribute="trailing" secondItem="Q4U-V4-gT5" secondAttribute="trailing" id="KsC-ad-ZLQ"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="trailing" secondItem="ibN-DA-Idd" secondAttribute="trailing" id="Mx8-Zn-olk"/>
+                            <constraint firstItem="qEv-13-Lk2" firstAttribute="top" secondItem="ibN-DA-Idd" secondAttribute="bottom" constant="8" symbolic="YES" id="RbN-Nj-5C3"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="trailing" secondItem="zvD-j6-0QU" secondAttribute="trailingMargin" id="a89-uB-jgA"/>
+                            <constraint firstItem="fUx-SF-y39" firstAttribute="top" secondItem="Q4U-V4-gT5" secondAttribute="bottom" constant="17" id="cTk-Io-vTN"/>
+                            <constraint firstItem="gHb-YY-xUa" firstAttribute="top" secondItem="bK3-c2-URA" secondAttribute="bottom" constant="9" id="ovJ-az-Ys6"/>
+                            <constraint firstItem="ibN-DA-Idd" firstAttribute="top" secondItem="Pkk-SS-l37" secondAttribute="bottom" constant="8" symbolic="YES" id="rDa-bO-eez"/>
+                            <constraint firstItem="Pkk-SS-l37" firstAttribute="leading" secondItem="gHb-YY-xUa" secondAttribute="trailing" constant="8" symbolic="YES" id="wLp-6N-74J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PY5-g6-t7c">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rhM-nl-VYq">
+                            <connections>
+                                <action selector="saveDataPoint:" destination="4PM-Pl-atb" id="1rS-0c-mgk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gallonsPurchased" destination="Pkk-SS-l37" id="jb1-Xb-A0t"/>
+                        <outlet property="odometerReading" destination="ibN-DA-Idd" id="qs1-yR-vSW"/>
+                        <outlet property="totalCost" destination="qEv-13-Lk2" id="ABO-Pl-ihi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozY-8C-XrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="-152"/>
+        </scene>
+        <!--Mileage Data Detail View Controller-->
+        <scene sceneID="eDB-Bp-q1s">
+            <objects>
+                <viewController id="Efc-gy-5Pl" customClass="MileageDataDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e0r-CS-yv4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pfq-3Y-g9V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UGg-te-iVH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance since last fill:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tep-ug-QgM">
+                                <rect key="frame" x="16" y="72" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallons purchased:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wj-BU-VDe">
+                                <rect key="frame" x="38" y="101" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price per gallon:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33X-Me-Ktk">
+                                <rect key="frame" x="62" y="159" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total cost:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kg6-jj-lbo">
+                                <rect key="frame" x="108" y="188" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odometer reading:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tt2-9P-bE6">
+                                <rect key="frame" x="43" y="130" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeE-ys-8Qd">
+                                <rect key="frame" x="195" y="72" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmP-kA-qks">
+                                <rect key="frame" x="195" y="130" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-Um-FBF">
+                                <rect key="frame" x="195" y="159" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-zy-uRC">
+                                <rect key="frame" x="195" y="188" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaO-iU-seh">
+                                <rect key="frame" x="195" y="101" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tep-ug-QgM" firstAttribute="trailing" secondItem="33X-Me-Ktk" secondAttribute="trailing" id="0NG-LX-X2I"/>
+                            <constraint firstItem="5wj-BU-VDe" firstAttribute="top" secondItem="tep-ug-QgM" secondAttribute="bottom" constant="8" symbolic="YES" id="8hh-um-pOs"/>
+                            <constraint firstItem="tep-ug-QgM" firstAttribute="leading" secondItem="UGg-te-iVH" secondAttribute="leadingMargin" id="EuG-WA-yTO"/>
+                            <constraint firstItem="tep-ug-QgM" firstAttribute="trailing" secondItem="tt2-9P-bE6" secondAttribute="trailing" id="Qf8-Cd-17e"/>
+                            <constraint firstItem="5wj-BU-VDe" firstAttribute="trailing" secondItem="tep-ug-QgM" secondAttribute="trailing" id="Vh9-h6-28V"/>
+                            <constraint firstItem="tt2-9P-bE6" firstAttribute="top" secondItem="5wj-BU-VDe" secondAttribute="bottom" constant="8" symbolic="YES" id="ZW1-vo-1lZ"/>
+                            <constraint firstItem="Kg6-jj-lbo" firstAttribute="top" secondItem="33X-Me-Ktk" secondAttribute="bottom" constant="8" symbolic="YES" id="bZa-qd-Wkr"/>
+                            <constraint firstItem="tep-ug-QgM" firstAttribute="trailing" secondItem="Kg6-jj-lbo" secondAttribute="trailing" id="mpc-aX-I5M"/>
+                            <constraint firstItem="tep-ug-QgM" firstAttribute="top" secondItem="e0r-CS-yv4" secondAttribute="bottom" constant="8" symbolic="YES" id="nkT-VG-27w"/>
+                            <constraint firstItem="33X-Me-Ktk" firstAttribute="top" secondItem="tt2-9P-bE6" secondAttribute="bottom" constant="8" symbolic="YES" id="oa0-37-bMk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EOY-wW-FBs"/>
+                    <connections>
+                        <outlet property="distanceSinceLastFill" destination="QeE-ys-8Qd" id="0ce-2V-78X"/>
+                        <outlet property="gallonsPurchased" destination="CaO-iU-seh" id="U2O-Vb-KFw"/>
+                        <outlet property="odometerReading" destination="NmP-kA-qks" id="icD-T0-oCO"/>
+                        <outlet property="pricePerGallon" destination="qqJ-Um-FBF" id="Fgf-yn-aNa"/>
+                        <outlet property="totalCost" destination="f3b-zy-uRC" id="dmL-ZM-eUV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DD2-St-IGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907" y="519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gEC-da-Pd7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0c9-D5-rfr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KA3-jO-xCU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QyC-jz-tQS" kind="relationship" relationship="rootViewController" id="2hn-NK-Ggz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3c-jr-YqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="171"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

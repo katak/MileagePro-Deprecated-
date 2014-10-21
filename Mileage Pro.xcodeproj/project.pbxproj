@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01212EDB19ED7EF6004523E6 /* MileageDataPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01212EDA19ED7EF6004523E6 /* MileageDataPointModel.m */; };
+		013D6EDE19E5FB7200ACABB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D6EDD19E5FB7200ACABB8 /* main.m */; };
+		013D6EE119E5FB7200ACABB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D6EE019E5FB7200ACABB8 /* AppDelegate.m */; };
+		013D6EE419E5FB7200ACABB8 /* MileageDataDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D6EE319E5FB7200ACABB8 /* MileageDataDetailViewController.m */; };
+		013D6EE719E5FB7200ACABB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013D6EE519E5FB7200ACABB8 /* Main.storyboard */; };
+		013D6EE919E5FB7200ACABB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013D6EE819E5FB7200ACABB8 /* Images.xcassets */; };
+		013D6EEC19E5FB7200ACABB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013D6EEA19E5FB7200ACABB8 /* LaunchScreen.xib */; };
+		013D6EF819E5FB7200ACABB8 /* Mileage_ProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D6EF719E5FB7200ACABB8 /* Mileage_ProTests.m */; };
+		013D6F0319E5FBED00ACABB8 /* MileageDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D6F0219E5FBED00ACABB8 /* MileageDataTableViewController.m */; };
+		01AB18BD19E828E900B19A48 /* MileageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AB18BC19E828E900B19A48 /* MileageDataModel.m */; };
+		01AB18C019E8413A00B19A48 /* MileageDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AB18BF19E8413A00B19A48 /* MileageDataViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		013D6EF219E5FB7200ACABB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013D6ED019E5FB7200ACABB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013D6ED719E5FB7200ACABB8;
+			remoteInfo = "Mileage Pro";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01212ED919ED7EF6004523E6 /* MileageDataPointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MileageDataPointModel.h; path = Model/MileageDataPointModel.h; sourceTree = "<group>"; };
+		01212EDA19ED7EF6004523E6 /* MileageDataPointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MileageDataPointModel.m; path = Model/MileageDataPointModel.m; sourceTree = "<group>"; };
+		013D6ED819E5FB7200ACABB8 /* Mileage Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mileage Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		013D6EDC19E5FB7200ACABB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013D6EDD19E5FB7200ACABB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		013D6EDF19E5FB7200ACABB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		013D6EE019E5FB7200ACABB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		013D6EE219E5FB7200ACABB8 /* MileageDataDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MileageDataDetailViewController.h; sourceTree = "<group>"; };
+		013D6EE319E5FB7200ACABB8 /* MileageDataDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MileageDataDetailViewController.m; sourceTree = "<group>"; };
+		013D6EE619E5FB7200ACABB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		013D6EE819E5FB7200ACABB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		013D6EEB19E5FB7200ACABB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		013D6EF119E5FB7200ACABB8 /* Mileage ProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mileage ProTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		013D6EF619E5FB7200ACABB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		013D6EF719E5FB7200ACABB8 /* Mileage_ProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mileage_ProTests.m; sourceTree = "<group>"; };
+		013D6F0119E5FBED00ACABB8 /* MileageDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageDataTableViewController.h; sourceTree = "<group>"; };
+		013D6F0219E5FBED00ACABB8 /* MileageDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageDataTableViewController.m; sourceTree = "<group>"; };
+		01AB18BB19E828E900B19A48 /* MileageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MileageDataModel.h; path = Model/MileageDataModel.h; sourceTree = "<group>"; };
+		01AB18BC19E828E900B19A48 /* MileageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MileageDataModel.m; path = Model/MileageDataModel.m; sourceTree = "<group>"; };
+		01AB18BE19E8413A00B19A48 /* MileageDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageDataViewController.h; sourceTree = "<group>"; };
+		01AB18BF19E8413A00B19A48 /* MileageDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageDataViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013D6ED519E5FB7200ACABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013D6EEE19E5FB7200ACABB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01212EDC19ED830D004523E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01AB18BB19E828E900B19A48 /* MileageDataModel.h */,
+				01AB18BC19E828E900B19A48 /* MileageDataModel.m */,
+				01212ED919ED7EF6004523E6 /* MileageDataPointModel.h */,
+				01212EDA19ED7EF6004523E6 /* MileageDataPointModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		013D6ECF19E5FB7200ACABB8 = {
+			isa = PBXGroup;
+			children = (
+				013D6EDA19E5FB7200ACABB8 /* Mileage Pro */,
+				013D6EF419E5FB7200ACABB8 /* Mileage ProTests */,
+				013D6ED919E5FB7200ACABB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		013D6ED919E5FB7200ACABB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				013D6ED819E5FB7200ACABB8 /* Mileage Pro.app */,
+				013D6EF119E5FB7200ACABB8 /* Mileage ProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		013D6EDA19E5FB7200ACABB8 /* Mileage Pro */ = {
+			isa = PBXGroup;
+			children = (
+				013D6EE219E5FB7200ACABB8 /* MileageDataDetailViewController.h */,
+				013D6EE319E5FB7200ACABB8 /* MileageDataDetailViewController.m */,
+				013D6EE519E5FB7200ACABB8 /* Main.storyboard */,
+				013D6EE819E5FB7200ACABB8 /* Images.xcassets */,
+				013D6EEA19E5FB7200ACABB8 /* LaunchScreen.xib */,
+				013D6EDB19E5FB7200ACABB8 /* Supporting Files */,
+				013D6F0119E5FBED00ACABB8 /* MileageDataTableViewController.h */,
+				013D6F0219E5FBED00ACABB8 /* MileageDataTableViewController.m */,
+				01212EDC19ED830D004523E6 /* Model */,
+				01AB18BE19E8413A00B19A48 /* MileageDataViewController.h */,
+				01AB18BF19E8413A00B19A48 /* MileageDataViewController.m */,
+			);
+			path = "Mileage Pro";
+			sourceTree = "<group>";
+		};
+		013D6EDB19E5FB7200ACABB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013D6EDF19E5FB7200ACABB8 /* AppDelegate.h */,
+				013D6EE019E5FB7200ACABB8 /* AppDelegate.m */,
+				013D6EDC19E5FB7200ACABB8 /* Info.plist */,
+				013D6EDD19E5FB7200ACABB8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		013D6EF419E5FB7200ACABB8 /* Mileage ProTests */ = {
+			isa = PBXGroup;
+			children = (
+				013D6EF719E5FB7200ACABB8 /* Mileage_ProTests.m */,
+				013D6EF519E5FB7200ACABB8 /* Supporting Files */,
+			);
+			path = "Mileage ProTests";
+			sourceTree = "<group>";
+		};
+		013D6EF519E5FB7200ACABB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013D6EF619E5FB7200ACABB8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		013D6ED719E5FB7200ACABB8 /* Mileage Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013D6EFB19E5FB7200ACABB8 /* Build configuration list for PBXNativeTarget "Mileage Pro" */;
+			buildPhases = (
+				013D6ED419E5FB7200ACABB8 /* Sources */,
+				013D6ED519E5FB7200ACABB8 /* Frameworks */,
+				013D6ED619E5FB7200ACABB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mileage Pro";
+			productName = "Mileage Pro";
+			productReference = 013D6ED819E5FB7200ACABB8 /* Mileage Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		013D6EF019E5FB7200ACABB8 /* Mileage ProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013D6EFE19E5FB7200ACABB8 /* Build configuration list for PBXNativeTarget "Mileage ProTests" */;
+			buildPhases = (
+				013D6EED19E5FB7200ACABB8 /* Sources */,
+				013D6EEE19E5FB7200ACABB8 /* Frameworks */,
+				013D6EEF19E5FB7200ACABB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013D6EF319E5FB7200ACABB8 /* PBXTargetDependency */,
+			);
+			name = "Mileage ProTests";
+			productName = "Mileage ProTests";
+			productReference = 013D6EF119E5FB7200ACABB8 /* Mileage ProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		013D6ED019E5FB7200ACABB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = illlillilliliil;
+				TargetAttributes = {
+					013D6ED719E5FB7200ACABB8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					013D6EF019E5FB7200ACABB8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 013D6ED719E5FB7200ACABB8;
+					};
+				};
+			};
+			buildConfigurationList = 013D6ED319E5FB7200ACABB8 /* Build configuration list for PBXProject "Mileage Pro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 013D6ECF19E5FB7200ACABB8;
+			productRefGroup = 013D6ED919E5FB7200ACABB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				013D6ED719E5FB7200ACABB8 /* Mileage Pro */,
+				013D6EF019E5FB7200ACABB8 /* Mileage ProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		013D6ED619E5FB7200ACABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D6EE719E5FB7200ACABB8 /* Main.storyboard in Resources */,
+				013D6EEC19E5FB7200ACABB8 /* LaunchScreen.xib in Resources */,
+				013D6EE919E5FB7200ACABB8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013D6EEF19E5FB7200ACABB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		013D6ED419E5FB7200ACABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D6F0319E5FBED00ACABB8 /* MileageDataTableViewController.m in Sources */,
+				01AB18C019E8413A00B19A48 /* MileageDataViewController.m in Sources */,
+				013D6EE419E5FB7200ACABB8 /* MileageDataDetailViewController.m in Sources */,
+				01212EDB19ED7EF6004523E6 /* MileageDataPointModel.m in Sources */,
+				013D6EE119E5FB7200ACABB8 /* AppDelegate.m in Sources */,
+				01AB18BD19E828E900B19A48 /* MileageDataModel.m in Sources */,
+				013D6EDE19E5FB7200ACABB8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013D6EED19E5FB7200ACABB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013D6EF819E5FB7200ACABB8 /* Mileage_ProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		013D6EF319E5FB7200ACABB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013D6ED719E5FB7200ACABB8 /* Mileage Pro */;
+			targetProxy = 013D6EF219E5FB7200ACABB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		013D6EE519E5FB7200ACABB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013D6EE619E5FB7200ACABB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		013D6EEA19E5FB7200ACABB8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013D6EEB19E5FB7200ACABB8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		013D6EF919E5FB7200ACABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		013D6EFA19E5FB7200ACABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		013D6EFC19E5FB7200ACABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mileage Pro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		013D6EFD19E5FB7200ACABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mileage Pro/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		013D6EFF19E5FB7200ACABB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mileage ProTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mileage Pro.app/Mileage Pro";
+			};
+			name = Debug;
+		};
+		013D6F0019E5FB7200ACABB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mileage ProTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mileage Pro.app/Mileage Pro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		013D6ED319E5FB7200ACABB8 /* Build configuration list for PBXProject "Mileage Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013D6EF919E5FB7200ACABB8 /* Debug */,
+				013D6EFA19E5FB7200ACABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013D6EFB19E5FB7200ACABB8 /* Build configuration list for PBXNativeTarget "Mileage Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013D6EFC19E5FB7200ACABB8 /* Debug */,
+				013D6EFD19E5FB7200ACABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013D6EFE19E5FB7200ACABB8 /* Build configuration list for PBXNativeTarget "Mileage ProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013D6EFF19E5FB7200ACABB8 /* Debug */,
+				013D6F0019E5FB7200ACABB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 013D6ED019E5FB7200ACABB8 /* Project object */;
+}
